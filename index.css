@@ -1,0 +1,188 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+/* Sección info */
+.info {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.info p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.image-sample {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Beneficios */
+.benefits {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 20px;
+  background: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #e64a19;
+  transform: scale(1.1);
+}
+
+/* Galería */
+.gallery {
+  padding: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background: rgba(0,0,0,0.3);
+  font-size: 14px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .image-sample {
+    width: 95%;
+  }
+}
+
+/* Logo grande y adaptable */
+header {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.2); /* hace que se integre con el fondo */
+  border-radius: 0 0 20px 20px;
+}
+
+.logo {
+  width: 180px;      /* más grande */
+  max-width: 50%;    /* adaptable a pantallas pequeñas */
+  height: auto;
+  border-radius: 50%; /* opcional: redondo */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* se destaca sobre el fondo */
+  margin-bottom: 15px;
+}
+
+/* Encabezado texto */
+header h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* Responsive para celular */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+}
+
+
+
